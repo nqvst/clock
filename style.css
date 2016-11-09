@@ -3,10 +3,6 @@
       margin: 0;
     }
     
-    html, body {
-      height: 100%;
-    }
-    
     body {
         font-family: Verdana;
         transition: background-color 0.75s ease-out;
@@ -33,7 +29,7 @@
     .container {
         display: flex;
         flex-direction: column;
-        min-height: 100vh;
+        height: 100vh;
         justify-content: flex-end;
     }
 
