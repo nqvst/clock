@@ -1,24 +1,24 @@
-const clock = document.getElementById('clock');
+const clockDiv = document.getElementById('clock');
 const dateDiv = document.getElementById('date');
-const date = () => new Date();
+const getDate = () => new Date();
 
 const pad1 = (str) => {
     return str.length < 2 ? `0${str}` : str;
 }
 
-const h = () => pad1(`${date().getHours()}`);
-const m = () => pad1(`${date().getMinutes()}`);
-const s = () => pad1(`${date().getSeconds()}`);
+const h = () => pad1(`${getDate().getHours()}`);
+const m = () => pad1(`${getDate().getMinutes()}`);
+const s = () => pad1(`${getDate().getSeconds()}`);
 
 const time = () => `${h()}:${m()}:${s()}`;
 
 
 const updateTime = () => {
-    clock.innerHTML = time();
+    clockDiv.innerHTML = time();
 }
 
 const updateDate = () => {
-    dateDiv.innerHTML = date().toDateString();
+    dateDiv.innerHTML = getDate().toDateString();
 }
 
 const randomColor = () => `#${Math.floor(Math.random()*16777215).toString(16)}`;
