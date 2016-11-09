@@ -61,9 +61,9 @@
     }
 
     .footer {
-        height: 10vh;
+        height: 5vh;
         display: flex;
-        font-size: 5vh;
+        font-size: 3vh;
         justify-content: center;
         align-items: center;
         background: rgba(0,0,0,0.2);
